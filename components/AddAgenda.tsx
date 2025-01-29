@@ -18,7 +18,7 @@ export default function AddAgenda({ modalVisible, setModalVisible, addTarefa }: 
             style={{ backgroundColor: '#000', opacity: 1 }}
         >
             <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-                <View style={{ width: '80%', height: 300, backgroundColor: '#f2f2f2', borderRadius: 10, padding: 20 }}>
+                <View style={{ width: '80%', height: 200, backgroundColor: '#f2f2f2', borderRadius: 10, padding: 20 }}>
                     <View style={{ flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'center' }}>
                         <TouchableOpacity onPress={() => setModalVisible(false)}>
                             <AntDesign name="closesquare" size={24} color="red" />
@@ -41,7 +41,7 @@ export default function AddAgenda({ modalVisible, setModalVisible, addTarefa }: 
                     <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
                         <TouchableOpacity
                             style={{
-                                backgroundColor: '#007AFF',
+                                backgroundColor: '#9ACBD0',
                                 padding: 10,
                                 borderRadius: 5,
                             }}
@@ -55,7 +55,7 @@ export default function AddAgenda({ modalVisible, setModalVisible, addTarefa }: 
                                 setModalVisible(false)
                             }}
                         >
-                            <Text style={{ color: '#fff' }}>Adicionar</Text>
+                            <Text style={{ color: '#fff', fontWeight: "bold" }}>Adicionar</Text>
                         </TouchableOpacity>
                     </View>
                 </View>

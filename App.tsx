@@ -8,35 +8,7 @@ import AddAgenda from './components/AddAgenda';
 const agenda = [
   {
     id: 1,
-    agenda: 'Estudar',
-  },
-  {
-    id: 2,
-    agenda: 'Programação',
-  },
-  {
-    id: 3,
-    agenda: 'Reunião',
-  },
-  {
-    id: 4,
-    agenda: 'Estudar',
-  },
-  {
-    id: 5,
-    agenda: 'Trabalhar',
-  },
-  {
-    id: 6,
-    agenda: 'Dormir',
-  },
-  {
-    id: 7,
-    agenda: 'Estudar',
-  },
-  {
-    id: 8,
-    agenda: 'Trabalhar',
+    agenda: 'Clique em + para adicionar uma nova tarefa',
   }
 ]
 
@@ -73,9 +45,9 @@ export default function App() {
   }
   return (
     <View style={{ flex: 1, backgroundColor: '#9ACBD0' }}>
-      <View style={{ width: '100%', height: 100, justifyContent: 'center', alignItems: 'center', marginBottom: 20 }}>
+      <View style={{ width: '100%', height: 100, justifyContent: 'center', alignItems: 'center', marginBottom: 20, }}>
         <ImageBackground source={require('./resource/Agenda.png')} style={{ flex: 1, justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
-          <Text style={{ fontSize: 22, color: '#000', fontFamily: 'Lato_400Regular' }}>Hello world</Text>
+          <Text style={{ fontSize: 22, color: '#9ACBD0', fontFamily: 'Lato_400Regular', backgroundColor: 'white', padding: 10, borderRadius: 15, fontWeight: 'bold' }}>Tarefas do dia!</Text>
         </ImageBackground>
         <StatusBar style="auto" />
       </View>
@@ -97,7 +69,7 @@ export default function App() {
       </ScrollView>
       <View>
         <TouchableHighlight style={{ position: 'absolute', bottom: 20, right: 15, backgroundColor: '#fff', width: 45, height: 45, borderRadius: 50, justifyContent: 'center', alignItems: 'center' }} onPress={() => setModalVisible(true)}>
-          <AntDesign name="plus" size={24} color="black" />
+          <AntDesign name="plus" size={24} color="#9ACBD0" />
         </TouchableHighlight>
       </View>
       <AddAgenda modalVisible={modalVisible} setModalVisible={setModalVisible} addTarefa={addTarefa} />
